@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('/assets/background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#login{
+    padding-top: 12%;
+    color: white;
+}
+
+.btn.btn-success{
+    padding: .4em 2em;
+    background-color: transparent;
+    border: 1px solid white;
+
+}
+.btn.btn-success:hover{
+    
+    background-color: rgb(26, 0, 90);
+    border: 1px solid rgb(26, 0, 90);
+}
+
+form{
+    padding: 0 3em;
+   
+}
+
+#login .title>span{
+    font-size: .8em;
+
+}
+.text-left{
+    font-size: .8em;
+   
+}
+#email-text{
+    margin-right: 180px;
+   
+}
+#pass-text{
+    margin-right: 205px;
+   
+}
+.container{
+    backdrop-filter: blur(100px);
+}
