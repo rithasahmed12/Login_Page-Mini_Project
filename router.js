@@ -23,10 +23,7 @@ router.get('/', (req, res) => {
 router.post('/login',(req,res)=>{
     if(req.body.email == credential.email && req.body.password == credential.password){
         req.session.user = req.body.email;
-        console.log(req.session.user,"this is session");
         res.redirect('/dashboard')
-        console.log(req.session);
-        // res.end("login Successful....!")
     }else{
         req.session.message = 'invalid user'
         res.redirect("/")
@@ -36,7 +33,6 @@ router.post('/login',(req,res)=>{
 // rote for dashboard
 router.get('/dashboard',(req,res)=>{
     if(req.session.user){
-            // Render the dashboard
         res.render('dashboard',{user : req.session.user})
     }else{
         res.redirect("/")
